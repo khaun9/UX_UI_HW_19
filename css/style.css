@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #262626;
+}
+
+/* HERO IMAGE */
+#Hero {
+    background-image: url(../images/TreeHero.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+/* NAVIGATION BAR */
+.header {
+    height: 25%;
+    vertical-align: top;
+    width: 73%;
+    padding: 3%;
+}
+.inline-block {
+    display: grid;
+    grid-template-columns: 20% 100%;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-areas: 
+    "navBar h1"
+    "navBar content"
+    "altNav content";
+    color: #ededed;
+    justify-items: center;
+}
+h1 {
+    grid-area: h1;
+    color: #ffc240;
+    font-size: 48px;
+    font-weight: bold;
+    -webkit-text-stroke-color: #22401f;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+    margin: 30px;
+    height: fit-content;
+}
+
+#navBar {
+    grid-area: navBar;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
+}
+#about{
+    text-decoration: none;
+    color: #ededed; 
+}
+#projects{
+    text-decoration: none;
+    color: #ededed; 
+}
+#about:hover {
+    color: #ffc240;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#projects:hover {
+    color: #ffc240;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#contact:hover {
+    color: #ffc240;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#resume:hover {
+    color: #ffc240;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.altNav {
+    grid-area: altNav;
+    align-items: end;
+    font-size: 20px;
+}
+#linkedin:hover {
+    color: #ffc240;
+    text-decoration: underline;
+}
+#insta:hover {
+    color: #ffc240;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    width: 50%;
+    margin-left: auto;
+    padding: 0;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 40px;
+
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    width: 100vw;
+}
+.content {
+    width: 500px;
+    grid-area: content;
+    justify-content: end;
+    height: fit-content;
+}
+#workButton {
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+}
+
+/* PORTFOLIO WORK */
+#myWork {
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    color:#ededed;
+}
+.workOverview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "circleImg h3"
+    "circleImg p";
+}
+#overviewReverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h3 circleImg"
+    "p circleImg";
+}
+.circleImg {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+}
+h3 {
+    color: #ffc240;
+    -webkit-text-stroke-color: #22401f;
+    -webkit-text-stroke-width: 2px;
+    font-size: 36px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #262626;
+    padding: 5px;
+    outline: 2px solid #ffc240;
+    text-align: center;
+}
+.myFooter {
+    color: #ededed;
+}
+.indFooter {
+    display: inline-block;
+}
+ul {
+    display: inline-block;
+}
+li {
+    padding: 20px;
+    display: inline-block;
+
+}
+button {
+    background-color: #22401f;
+    color: #ffc240;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    box-shadow: 1px 1px #ededed;
+    height: 2em;
+    padding: 5px;
+    margin: 5px;
+    width: 20%;
+    
+}
+button:hover {
+    background-color: #ffc240;
+    color: #22401f;
+}
+
+/* My UX Skills Section */
+h2 {
+text-align: center;
+color: #ededed;
+font-weight: bold;
+}
+.flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.flexBox {
+    width: 33%;
+    margin: 20px;
+    padding: 20px;
+    color: #ededed;
+}
+.flexPic {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+/* jQuery inputs */
+
+
